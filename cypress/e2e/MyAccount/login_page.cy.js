@@ -8,6 +8,8 @@ describe("visit myaccount login page", () => {
   });
 
   context("Login Page", () => {
+
+    
     it("ATM locations button", () => {
       cy.get('.atm-locations-btn')
         .should("be.visible")
@@ -50,7 +52,7 @@ describe("visit myaccount login page", () => {
 
     it("Enter valid log in credentials and click the log in button to reach MyAccount", () => {
       cy.get('[data-cy="username-input"]').type("RomanGarza");
-      cy.get('[data-cy="password-input"]').type("aknsdlfknasdnf789!!@@F");
+      cy.get('[data-cy="password-input"]').type("RomanG123!");
       cy.get('[data-cy="submit-button"]')
         .contains("LOGIN")
         .should("be.visible")

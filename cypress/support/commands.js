@@ -29,7 +29,7 @@
 
 Cypress.Commands.add('Login', () => { 
     cy.get('[data-cy="username-input"]').type("RomanGarza");
-      cy.get('[data-cy="password-input"]').type("aknsdlfknasdnf789!!@@F");
+      cy.get('[data-cy="password-input"]').type("RomanG123!");
       cy.get('[data-cy="submit-button"]')
         .contains("LOGIN")
         .should("be.visible")
