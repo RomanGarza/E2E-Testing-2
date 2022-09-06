@@ -18,6 +18,11 @@ describe("Test Dashboard main functions", () => {
       cy.location("pathname").should("eq", "/dash/virtualcard")
   })
 
+  it("Account Deposit", () => {
+    cy.get('[data-cy="amount-text"]')
+    .should("be.visible")
+  })
+
   it("Direct Deposit", () => {
     cy.get('[data-cy="dash-directDeposit-title"]').should("be.visible");
     cy.get('[data-cy="dash-directDeposit-button"]')
