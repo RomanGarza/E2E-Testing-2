@@ -19,9 +19,13 @@ describe("Test Dashboard main functions", () => {
   //     cy.location("pathname").should("eq", "/dash/virtualcard")
   // })
 
-  it("Account Deposit", () => {
+  it("Account Balance", () => {
     cy.get('[data-cy="amount-text"]')
       .should("be.visible")
+  })
+
+  it("FriendSpend Rewards", () => {
+    
   })
 
   it("Direct Deposit", () => {
@@ -52,6 +56,8 @@ describe("Test Dashboard main functions", () => {
     cy.get('[data-cy="dash-loadMoney-button"]').should("be.visible").click()
     cy.get('.v-card__actions').should("be.visible")
   })
+
+
 });
 
 // Expected results
