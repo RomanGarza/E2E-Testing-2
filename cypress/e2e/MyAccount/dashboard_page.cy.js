@@ -24,8 +24,8 @@ describe("Test Dashboard main functions", () => {
       .should("be.visible")
   })
 
-  it("FriendSpend Rewards", () => {
-    
+  it("FriendSpend-Rewards", () => {
+    //testing code
   })
 
   it("Direct Deposit", () => {
